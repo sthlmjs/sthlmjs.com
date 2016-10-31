@@ -2,25 +2,20 @@
 .menu-container {
   background-color: $brand-color;
   box-sizing: border-box;
-  margin:0;
+  margin:0 0 $spacing-unit * 2;
   padding:$spacing-unit;
-  padding-bottom:0;
   position: relative;
   z-index: $z-menu;
   @include media-query($on-laptop) {
-    padding:$spacing-unit * 2;
-    padding-bottom:0;
+    padding:$spacing-unit;
   }
 }
 
 .menu {
-  max-width: $content-width;
-  padding:0;
-  font-size: $large-font-size;
-
+  @extend .wrapper;
+  position: relative;
   .menu-link {
     @include transition(all .2s ease-in-out);
-    padding-bottom: $spacing-unit / 3;
     display: inline-block;
     color:rgba(255,255,255,.8);
     &:hover,
@@ -31,9 +26,22 @@
     }
   }
   .menu-logo {
-    @extend .menu-link;
-    font-weight: bold;
+    transition: opacity .2s ease-in-out;
     float: left;
+    background: url(/assets/images/logo.png) no-repeat center;
+    background-size: contain;
+    height:40px;
+    width:165px;
+    text-indent: -100000px;
+    overflow: hidden;
+    position: absolute;
+    left:$spacing-unit;
+    top:50%;
+    margin-top:-20px;
+    opacity: 0.9;
+    &:hover {
+      opacity: 1;
+    }
   }
   .menu-items {
     text-align: right;
