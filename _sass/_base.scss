@@ -182,6 +182,10 @@ article {
 .index {
   text-align: center;
 }
+.members {
+  margin:0 auto $spacing-unit;
+  width:80%;
+}
 .join-us {
   transition: opacity .2s ease-in-out;
   background: url(/assets/images/members.png) center no-repeat;
