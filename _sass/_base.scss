@@ -189,19 +189,27 @@ article {
   .main-links {
     font-weight:700;
     margin-bottom: 0.9em;
+    overflow: hidden;
   }
   .sub-links {
     font-weight:600;
     font-size:70%;
     margin-bottom: 0;
+    overflow: hidden;
   }
   .nav-link {
     display:block;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.3);
+    padding:15px;
+    box-sizing: border-box;
+    margin-bottom:5px;
   }
   @include media-query(600px) {
     .nav-link {
       display:inline-block;
       margin:0 10px;
+      box-shadow: none;
+      padding:0;
     }
   }
 }
