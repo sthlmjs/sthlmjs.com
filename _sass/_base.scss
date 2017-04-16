@@ -2,7 +2,7 @@
  * Basic styling
  */
 body {
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  font: $base-font-weight #{$small-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
@@ -11,7 +11,12 @@ body {
   -o-font-feature-settings: "kern" 1;
   font-feature-settings: "kern" 1;
   font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
   @include transition(background-color .2s ease-in-out);
+
+  @include media-query(600px) {
+    font-size: #{$base-font-size};
+  }
 }
 
 
@@ -82,16 +87,12 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: $brand-color;
+  transition: opacity .2s ease-in-out;
+  color: $link-color;
   text-decoration: none;
 
-  &:visited {
-    color: darken($brand-color, 15%);
-  }
-
   &:hover {
-    color: $brand-color;
-    text-decoration: none;
+    opacity: 0.8;
   }
 }
 
@@ -141,26 +142,34 @@ pre {
   }
 }
 
-.wrapper {
-  max-width: $content-width;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
-}
-
 article {
+  $link-color: #111;
+  .crown {
+    width:60px;
+    margin-bottom: 20px;
+  }
   h1 {
-    font-size: $larger-font-size;
+    font-size: $large-font-size;
+    @include media-query(600px) {
+      font-size: $larger-font-size;
+    }
     letter-spacing: -1px;
     font-weight: 900;
     line-height: 1.2;
+    span {
+      display: block;
+      text-align: center;
+      &:last-child {
+        color:#111;
+      }
+    }
   }
   p:first-child {
     font-size:$larger-font-size;
     margin-bottom:$spacing-unit * 1.5;
   }
   p {
+    font-weight: 500;
     margin-bottom:$spacing-unit;
   }
 
@@ -170,34 +179,33 @@ article {
 
   a {
     transition: all .2s ease-in-out;
-    color:$brand-color;
+    color:$link-color;
     border-bottom: solid 1px rgba($brand-color, 0.2);
     padding-bottom: 2px;
     &:hover {
       border-bottom: solid 1px rgba($brand-color, 1);
     }
   }
+  .main-links {
+    font-weight:700;
+    margin-bottom: 0.9em;
+  }
+  .sub-links {
+    font-weight:600;
+    font-size:70%;
+    margin-bottom: 0;
+  }
+  .nav-link {
+    display:block;
+  }
+  @include media-query(600px) {
+    .nav-link {
+      display:inline-block;
+      margin:0 10px;
+    }
+  }
 }
 
 .index {
   text-align: center;
-}
-.members {
-  margin:0 auto $spacing-unit;
-  width:80%;
-}
-.join-us {
-  transition: opacity .2s ease-in-out;
-  background: url(/assets/images/members.png) center no-repeat;
-  background-size:contain;
-  width:100%;
-  padding-top:50%;
-  display: block;
-  overflow: hidden;
-  text-indent: -1000000px;
-  margin-top:$spacing-unit * 2;
-  margin-bottom:$spacing-unit * 2;
-  &:hover {
-    opacity:0.8;
-  }
 }

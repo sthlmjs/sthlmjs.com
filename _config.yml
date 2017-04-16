@@ -11,6 +11,7 @@ github_username:  javve
 
 permalink: pretty
 markdown: kramdown
+livereload: true
 gems:
  - jekyll-coffeescript
  - jekyll-redirect-from
