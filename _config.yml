@@ -1,9 +1,9 @@
 title: Sthlm.js - JavaScript and nice people
 email: jonny.stromberg@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Sthlm.js is a meetup with over 2700 members founded 2011. We meet about once
+  Sthlm.js is a meetup with over 3000 members founded 2011. We meet about once
   a month and talk about JavaScript while making new friends and learn new
-  things. We’re always looking for speakers and event host.
+  things. We’re always looking for speakers and event hosts.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://sthlmjs.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
