@@ -1,7 +1,10 @@
 .layout-default {
   background:url(/assets/images/faces.jpg) repeat top left #111;
-  background-size: 800px auto;
   min-height:100vh;
+  background-size: contain;
+  @include media-query(600px) {
+    background-size: 800px auto;
+  }
 }
 .flex-container {
   @include media-query(600px) {
@@ -15,14 +18,14 @@
 
 .wrapper {
   max-width: $content-width;
-  margin-right: auto;
-  margin-left: auto;
   padding: $spacing-unit;
+  margin: $spacing-unit;
   background-color:rgba(#F52C48, 0.92);
   color:#fff;
   box-shadow: 0 10px 85px 10px rgba(0,0,0,.8);
   box-sizing: border-box;
   @include media-query(600px) {
+    margin: 0 auto;
     border-radius: 10px;
     padding: $spacing-unit * 2;
   }
