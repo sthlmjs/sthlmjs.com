@@ -186,6 +186,17 @@ article {
       border-bottom: solid 1px rgba($brand-color, 1);
     }
   }
+  .join-link {
+    display: inline-block;
+    transition: all .2s ease-in-out;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 55px;
+    border-radius: 40px;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
   .main-links {
     font-weight:700;
     margin-bottom: 0.9em;
