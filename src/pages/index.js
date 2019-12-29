@@ -9,13 +9,13 @@ const IndexPage = () => (
     <article class="index">
       <img class="crown" src="/images/crown.png" alt="sthlm.js logo" />
       <h1>
-        <span>Welcome to Stockholm</span>
-        <span>JavaScript Meetup</span>
+        <span>sthlm.js</span>
+        <span>The Stockholm JavaScript Meetup</span>
       </h1>
       <p>
-        Sthlm.js is a meetup with over 3000 members founded 2011. We meet about
-        once a month and talk about JavaScript while making new friends and
-        learn new things. We’re always looking for speakers and event hosts.
+        Sthlm.js is a meetup group with over 4000 members founded 2011. We meet
+        about once a month and talk about JavaScript while making new friends
+        and learn new things.
       </p>
       <p>
         <a class="join-link" href="https://www.meetup.com/sthlm-js/">
@@ -33,7 +33,6 @@ const IndexPage = () => (
           Show events
         </a>
       </p>
-
       <p class="sub-links">
         <a
           class="nav-link"
@@ -51,6 +50,54 @@ const IndexPage = () => (
           GitHub
         </a>
       </p>
+
+      <hr />
+
+      <h2 class="organizers-headline">Organizers</h2>
+      <div class="organizers">
+        <div class="organizer">
+          <img src="/images/jonny.jpg" alt="Jonny" />
+          <span class="organizer-name">Jonny Strömberg</span>
+          <a class="organizer-link" href="https://twitter.com/javve">
+            @javve
+          </a>
+        </div>
+        <div class="organizer">
+          <img src="/images/stina.jpg" alt="Stina" />
+          <span class="organizer-name">Stina Andersson</span>
+        </div>
+        <div class="organizer">
+          <img src="/images/jocke.jpg" alt="Jocke" />
+          <span class="organizer-name">Joakim Ekberg</span>
+          <a class="organizer-link" href="https://twitter.com/kalasjocke">
+            @kalasjocke
+          </a>
+        </div>
+        <div class="organizer">
+          <img src="/images/becki.jpg" alt="Becki" />
+          <span class="organizer-name">Becki Wordsworth</span>
+          <a class="organizer-link" href="https://twitter.com/beckiwordsworth">
+            @beckiwordsworth
+          </a>
+        </div>
+      </div>
+
+      <h2 class="organizers-headline organizers-headline--chillin">
+        Organizers on parental leave 👶
+      </h2>
+      <div class="organizers organizers--chillin">
+        <div class="organizer">
+          <img src="/images/johannes.jpg" alt="Johannes" />
+          <span class="organizer-name">Johannes Edelstam</span>
+          <a class="organizer-link" href="https://twitter.com/jede">
+            @jede
+          </a>
+        </div>
+        <div class="organizer">
+          <img src="/images/geries.jpg" alt="Geries" />
+          <span class="organizer-name">Geries Handal</span>
+        </div>
+      </div>
     </article>
   </Layout>
 )

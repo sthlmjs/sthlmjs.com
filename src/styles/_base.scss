@@ -86,6 +86,7 @@ h5,
 h6 {
   font-family: $headline-font-family;
   font-weight: $headline-font-weight;
+  color: $headline-color;
 }
 
 /**
@@ -144,9 +145,8 @@ pre {
 }
 
 article {
-  $link-color: #111;
   .crown {
-    width: 60px;
+    width: 90px;
     margin-bottom: 20px;
   }
   h1 {
@@ -155,13 +155,20 @@ article {
       font-size: $larger-font-size;
     }
     letter-spacing: -1px;
-    font-weight: 900;
+    font-weight: 800;
     line-height: 1.2;
+    margin-bottom: $spacing-unit * 1;
     span {
       display: block;
       text-align: center;
       &:last-child {
         color: #111;
+        font-weight: 750;
+        letter-spacing: 0;
+        font-size: $small-font-size;
+        @include media-query(600px) {
+          font-size: $large-font-size;
+        }
       }
     }
   }
@@ -194,8 +201,9 @@ article {
     color: #fff;
     padding: 10px 55px;
     border-radius: 40px;
+    font-weight: 700;
     &:hover {
-      transform: scale(1.05);
+      opacity: 0.7;
     }
   }
   .main-links {
@@ -205,7 +213,7 @@ article {
   }
   .sub-links {
     font-weight: 600;
-    font-size: 70%;
+    font-size: $small-font-size;
     margin-bottom: 0;
     overflow: hidden;
   }
@@ -224,6 +232,13 @@ article {
       padding: 0;
     }
   }
+
+  hr {
+    margin: $spacing-unit * 2 0;
+    background-color: #eee;
+    border: none;
+    height: 1px;
+  }
 }
 
 .index {
@@ -239,4 +254,50 @@ article {
   bottom: 0;
   width: 100%;
   height: 100%;
+}
+
+.organizers-headline {
+  margin: $spacing-unit * 2 0 $spacing-unit;
+  font-weight: 600;
+  font-size: $large-font-size;
+}
+.organizers-headline--chillin {
+  font-size: $base-font-size;
+}
+.organizers {
+  overflow: hidden;
+  font-size: $small-font-size;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.organizer {
+  width: 50%;
+  margin-bottom: $spacing-unit;
+  @include media-query(600px) {
+    width: 25%;
+    margin-bottom: 0;
+  }
+  img {
+    width: 75%;
+    border-radius: 50%;
+  }
+  text-align: center;
+}
+.organizers--chillin {
+  opacity: 0.8;
+  .organizer {
+    @include media-query(600px) {
+    }
+  }
+}
+.organizer-name {
+  display: block;
+  font-weight: bold;
+  margin: 5px 0;
+  color: $headline-color;
+}
+.organizer-link {
+  display: inline-block;
+  font-weight: 500;
 }
