@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{mM5J:function(e,t,c){"use strict";c.r(t);var s=c("q1tI"),r=c.n(s),a=c("vrFN");t.default=function(){return r.a.createElement("div",null,r.a.createElement(a.a,{title:"Best practices for hosting meetups"}),r.a.createElement("iframe",{class:"full-screen-iframe",title:"Best Practices",src:"https://docs.google.com/document/d/1bss2PkKcMYyEVOI0etvaUCrSUm5ccVAlfDr7zA1ClHM/edit?usp=sharing"}))}}}]);
+//# sourceMappingURL=component---src-pages-best-practices-js-3159425333b345404540.js.map
