@@ -2,7 +2,8 @@
  * Basic styling
  */
 body {
-  font: $base-font-weight #{$small-font-size}/#{$base-line-height} $base-font-family;
+  font: $base-font-weight #{$small-font-size}/#{$base-line-height}
+    $base-font-family;
   color: $text-color;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
@@ -12,27 +13,33 @@ body {
   font-feature-settings: "kern" 1;
   font-kerning: normal;
   -webkit-font-smoothing: antialiased;
-  @include transition(background-color .2s ease-in-out);
+  @include transition(background-color 0.2s ease-in-out);
 
   @include media-query(600px) {
     font-size: #{$base-font-size};
   }
 }
 
-
-
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure,
 %vertical-rhythm {
-  margin-top:0;
+  margin-top: 0;
   margin-bottom: $spacing-unit / 2;
 }
-
-
 
 /**
  * Images
@@ -41,8 +48,6 @@ img {
   max-width: 100%;
   vertical-align: middle;
 }
-
-
 
 /**
  * Figures
@@ -55,39 +60,39 @@ figcaption {
   font-size: $small-font-size;
 }
 
-
-
 /**
  * Lists
  */
-ul, ol {
+ul,
+ol {
   margin-left: $spacing-unit;
 }
 
 li {
   > ul,
   > ol {
-     margin-bottom: 0;
+    margin-bottom: 0;
   }
 }
-
-
 
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $headline-font-family;
   font-weight: $headline-font-weight;
 }
-
-
 
 /**
  * Links
  */
 a {
-  transition: opacity .2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
   color: $link-color;
   text-decoration: none;
 
@@ -95,8 +100,6 @@ a {
     opacity: 0.8;
   }
 }
-
-
 
 /**
  * Blockquotes
@@ -113,8 +116,6 @@ blockquote {
     margin-bottom: 0;
   }
 }
-
-
 
 /**
  * Code formatting
@@ -145,7 +146,7 @@ pre {
 article {
   $link-color: #111;
   .crown {
-    width:60px;
+    width: 60px;
     margin-bottom: 20px;
   }
   h1 {
@@ -160,17 +161,17 @@ article {
       display: block;
       text-align: center;
       &:last-child {
-        color:#111;
+        color: #111;
       }
     }
   }
   p:first-child {
-    font-size:$larger-font-size;
-    margin-bottom:$spacing-unit * 1.5;
+    font-size: $larger-font-size;
+    margin-bottom: $spacing-unit * 1.5;
   }
   p {
     font-weight: 500;
-    margin-bottom:$spacing-unit;
+    margin-bottom: $spacing-unit;
   }
 
   h2 {
@@ -178,8 +179,8 @@ article {
   }
 
   a {
-    transition: all .2s ease-in-out;
-    color:$link-color;
+    transition: all 0.2s ease-in-out;
+    color: $link-color;
     border-bottom: solid 1px rgba($brand-color, 0.2);
     padding-bottom: 2px;
     &:hover {
@@ -188,7 +189,7 @@ article {
   }
   .join-link {
     display: inline-block;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     background-color: #000;
     color: #fff;
     padding: 10px 55px;
@@ -198,33 +199,44 @@ article {
     }
   }
   .main-links {
-    font-weight:700;
+    font-weight: 700;
     margin-bottom: 0.9em;
     overflow: hidden;
   }
   .sub-links {
-    font-weight:600;
-    font-size:70%;
+    font-weight: 600;
+    font-size: 70%;
     margin-bottom: 0;
     overflow: hidden;
   }
   .nav-link {
-    display:block;
-    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.3);
-    padding:15px;
+    display: block;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.3);
+    padding: 15px;
     box-sizing: border-box;
-    margin-bottom:5px;
+    margin-bottom: 5px;
   }
   @include media-query(600px) {
     .nav-link {
-      display:inline-block;
-      margin:0 10px;
+      display: inline-block;
+      margin: 0 10px;
       box-shadow: none;
-      padding:0;
+      padding: 0;
     }
   }
 }
 
 .index {
   text-align: center;
+}
+
+.full-screen-iframe {
+  position: absolute;
+  border: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
 }

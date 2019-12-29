@@ -1,4 +1,0 @@
----
----
-
-{% include javascripts/misc.coffee %}

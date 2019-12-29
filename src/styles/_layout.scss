@@ -1,6 +1,6 @@
 .layout-default {
-  background:url(/assets/images/faces.jpg) repeat top left #111;
-  min-height:100vh;
+  background: url(/images/faces.jpg) repeat top left #111;
+  min-height: 100vh;
   background-size: contain;
   @include media-query(600px) {
     background-size: 800px auto;
@@ -11,18 +11,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height:100vh;
+    min-height: 100vh;
   }
 }
-
 
 .wrapper {
   max-width: $content-width;
   padding: $spacing-unit;
   margin: $spacing-unit;
-  background-color:rgba(#F52C48, 0.92);
-  color:#fff;
-  box-shadow: 0 10px 85px 10px rgba(0,0,0,.8);
+  background-color: rgba(#f52c48, 0.92);
+  color: #fff;
+  box-shadow: 0 10px 85px 10px rgba(0, 0, 0, 0.8);
   box-sizing: border-box;
   @include media-query(600px) {
     margin: 0 auto;
