@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{Xrcb:function(e,t,n){"use strict";n.r(t);var r=n("q1tI"),c=n.n(r),s=n("TJpk");t.default=function(){return c.a.createElement(s.Helmet,null,c.a.createElement("script",null,'window.location.replace("https://event.on24.com/eventRegistration/EventLobbyServlet?target=reg30.jsp&referrer=https%3A%2F%2Fwcc.on24.com%2Fwebcast%2Fwebcasts&eventid=2821392&sessionid=1&key=E0878DAA4A3EA37F5350FA901D1DC392&regTag=&sourcepage=register")'))}}}]);
+//# sourceMappingURL=component---src-pages-67-js-252014385892a3d8c4ea.js.map
