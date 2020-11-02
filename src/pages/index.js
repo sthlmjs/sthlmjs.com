@@ -83,7 +83,10 @@ const IndexPage = () => (
       </div>
 
       <h2 class="organizers-headline organizers-headline--chillin">
-        Organizers on parental leave 👶
+        Organizers on parental leave{" "}
+        <span role="img" aria-label="baby">
+          👶
+        </span>
       </h2>
       <div class="organizers organizers--chillin">
         <div class="organizer">
